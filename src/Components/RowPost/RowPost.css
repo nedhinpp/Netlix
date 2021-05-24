@@ -1,0 +1,40 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll ;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+   
+    height: 2px;
+  }
+  
+
+.posters::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+
+  .posters::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  
+  .posters::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+
+}
