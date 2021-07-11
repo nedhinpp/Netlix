@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Netlix/static/css/main.dfada0df.chunk.css",
-    "main.js": "/Netlix/static/js/main.161c26b8.chunk.js",
-    "main.js.map": "/Netlix/static/js/main.161c26b8.chunk.js.map",
+    "main.js": "/Netlix/static/js/main.e18922ad.chunk.js",
+    "main.js.map": "/Netlix/static/js/main.e18922ad.chunk.js.map",
     "runtime-main.js": "/Netlix/static/js/runtime-main.cec44c50.js",
     "runtime-main.js.map": "/Netlix/static/js/runtime-main.cec44c50.js.map",
     "static/js/2.956ec004.chunk.js": "/Netlix/static/js/2.956ec004.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.cec44c50.js",
     "static/js/2.956ec004.chunk.js",
     "static/css/main.dfada0df.chunk.css",
-    "static/js/main.161c26b8.chunk.js"
+    "static/js/main.e18922ad.chunk.js"
   ]
 }
