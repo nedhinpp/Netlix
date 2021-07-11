@@ -1,21 +1,34 @@
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 30px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #111;
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  padding: 20px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  background-color: #111 !important;
 }
-.logo{
-    position: fixed;
-    left: 20px;
-    width: 80px;
+.logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
 }
 
-.avatar{
-    position: fixed;
-    right: 20px;
-    width: 30px;
+.avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+}
+.loginName {
+  color: red;
+  position: fixed;
+  right: 4rem;
+  top: 1.5rem;
+}
+
+.loginName {
+  color: white;
+  position: fixed;
+  right: 4rem;
+  top: 1.5rem;
 }

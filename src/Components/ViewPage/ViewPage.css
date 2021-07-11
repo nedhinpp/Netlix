@@ -1,0 +1,14 @@
+.viewContent {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  color: white;
+}
+.viewPageBanner {
+  width: 50%;
+  float: right;
+}
+.youtubeContainer {
+  width: 75%;
+  margin-left: 12%;
+  padding-bottom: 12rem;
+}

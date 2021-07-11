@@ -1,0 +1,45 @@
+.adLine {
+  text-align: center;
+  padding-top: 15rem;
+  font-size: 2.5rem;
+  opacity: 1;
+}
+
+.adLine2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.fullBanner {
+  background-size: cover;
+  height: 720px;
+  color: white;
+  opacity: 1;
+}
+.ad_buttons {
+  text-align: center;
+}
+.sgbutton {
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(252, 0, 0, 0.986);
+  cursor: pointer;
+  margin-right: 1rem;
+
+  height: 43px;
+  font-size: 21px;
+}
+
+.sgbutton:hover {
+  color: rgb(255, 0, 0);
+  background-color: #ffffff;
+  height: 43px;
+  font-size: 21px;
+}
