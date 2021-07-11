@@ -1,13 +1,14 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./Startup.css";
+import image from "./image.png";
 
 function Startup() {
   const history = useHistory();
   return (
     <div
       style={{
-        backgroundImage: `url("/image.png")`,
+        backgroundImage: `url("${image}")`,
       }}
       className="fullBanner"
     >

@@ -8,12 +8,11 @@ import ViewPage from "./Components/ViewPage/ViewPage";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/Netlix" component={Home}></Route>
+      <Router basename={window.location.pathname || ""}>
         <Route path="/login" component={Login}></Route>
         <Route path="/signup" component={Signup}></Route>
         <Route path="/viewPage" component={ViewPage}></Route>
+        <Route exact path="/" component={Home}></Route>
       </Router>
     </div>
   );
