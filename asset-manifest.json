@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Netlix/static/css/main.dfada0df.chunk.css",
-    "main.js": "/Netlix/static/js/main.34495fc3.chunk.js",
-    "main.js.map": "/Netlix/static/js/main.34495fc3.chunk.js.map",
+    "main.js": "/Netlix/static/js/main.8bd1d7fe.chunk.js",
+    "main.js.map": "/Netlix/static/js/main.8bd1d7fe.chunk.js.map",
     "runtime-main.js": "/Netlix/static/js/runtime-main.cec44c50.js",
     "runtime-main.js.map": "/Netlix/static/js/runtime-main.cec44c50.js.map",
-    "static/js/2.956ec004.chunk.js": "/Netlix/static/js/2.956ec004.chunk.js",
-    "static/js/2.956ec004.chunk.js.map": "/Netlix/static/js/2.956ec004.chunk.js.map",
+    "static/js/2.f528aa42.chunk.js": "/Netlix/static/js/2.f528aa42.chunk.js",
+    "static/js/2.f528aa42.chunk.js.map": "/Netlix/static/js/2.f528aa42.chunk.js.map",
     "index.html": "/Netlix/index.html",
     "static/css/main.dfada0df.chunk.css.map": "/Netlix/static/css/main.dfada0df.chunk.css.map",
-    "static/js/2.956ec004.chunk.js.LICENSE.txt": "/Netlix/static/js/2.956ec004.chunk.js.LICENSE.txt",
+    "static/js/2.f528aa42.chunk.js.LICENSE.txt": "/Netlix/static/js/2.f528aa42.chunk.js.LICENSE.txt",
     "static/media/image.6d1c7ea4.png": "/Netlix/static/media/image.6d1c7ea4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cec44c50.js",
-    "static/js/2.956ec004.chunk.js",
+    "static/js/2.f528aa42.chunk.js",
     "static/css/main.dfada0df.chunk.css",
-    "static/js/main.34495fc3.chunk.js"
+    "static/js/main.8bd1d7fe.chunk.js"
   ]
 }
