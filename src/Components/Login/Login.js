@@ -9,19 +9,49 @@ function Login() {
   const [password, setPassword] = useState("");
   const history = useHistory();
 
+  const [emailError, setEmailError] = useState({});
+  const [passwordError, setPasswordError] = useState({});
+  const [loginError, setLoginError] = useState("");
+
   const handleLogin = (e) => {
     e.preventDefault();
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((result) => {
-        e.preventDefault();
-        history.push("/");
-      })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-      });
+    const isValid = doValidation();
+    if (isValid) {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password)
+        .then((result) => {
+          e.preventDefault();
+          history.push("/");
+        })
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          setLoginError(errorMessage);
+        });
+    }
+  };
+
+  const doValidation = () => {
+    const emailError = {};
+    const passwordError = {};
+    let isValid = true;
+    var pattern = new RegExp(
+      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+    );
+
+    if (!pattern.test(email)) {
+      emailError.emailErrorText = "Please enter a valid email Id";
+      isValid = false;
+    }
+    if (password.trim().length < 8) {
+      passwordError.passwordErrorText =
+        "Please enter a password which is having minimum 8 characters.";
+      isValid = false;
+    }
+    setEmailError(emailError);
+    setPasswordError(passwordError);
+    return isValid;
   };
 
   return (
@@ -43,6 +73,7 @@ function Login() {
             />
             <label className="label" id="email-label"></label>
           </div>
+          <span style={{ color: "red" }}>{emailError.emailErrorText}</span>
           <div className="inputError" id="email-inputError"></div>
           <div className="box-container" id="pwd-container">
             <input
@@ -57,7 +88,12 @@ function Login() {
             />
             <label className="label" id="pwd-label"></label>
           </div>
-          <div className="inputError" id="pwd-inputError"></div>
+          <span style={{ color: "red" }}>
+            {passwordError.passwordErrorText}
+          </span>
+          <div className="inputError" id="pwd-inputError">
+            <span style={{ color: "red" }}>{loginError}</span>
+          </div>
           <div className="box-container" id="login-button-container">
             <input id="login-button" type="submit" value="Log In" />
           </div>
